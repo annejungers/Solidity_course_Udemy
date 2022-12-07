@@ -45,7 +45,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"variable_scope2.sol": "C"
+			"variable_scope2.sol": "c"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -60,11 +60,11 @@
 	},
 	"sources": {
 		"variable_scope2.sol": {
-			"keccak256": "0xdf3cfbcf6f8de791001cc34a95af5de1028e43cc46dc6873d25d40dbf4aa08d6",
+			"keccak256": "0xb394c45b65ca23348b2c514c2d196630ce6f3f3b2e07c2e2ecf4e012f8044af4",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://a20b3c37dcb6721d96e6a80792762337662aa1a6b87faeb18b404b1f800a982b",
-				"dweb:/ipfs/QmddCENfHJLbvytZMvQLRqbn42AS9uDfVWrPartJjZS974"
+				"bzz-raw://2c6022aab7778a9743b964afb5852c9a3f4774ab7ab0ac661f323baee801c69a",
+				"dweb:/ipfs/QmZNtR96KdBGedHnyTfyzz5XM4yRHMNLa8V8isA49DvGWu"
 			]
 		}
 	},
