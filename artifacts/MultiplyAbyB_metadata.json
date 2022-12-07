@@ -1,0 +1,59 @@
+{
+	"compiler": {
+		"version": "0.8.7+commit.e28d00a7"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "multiply",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"logical_operators.sol": "MultiplyAbyB"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"logical_operators.sol": {
+			"keccak256": "0xc8bba212746df6d0f87d004a5cf7fff798f2404249f6051a87648a6bd1698817",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://e65213b4b10412921ff205390b2ee47845a1cf2a16462aa11e3955fd79a26d15",
+				"dweb:/ipfs/Qmbry45HysTAadPbcaJ8UnStkKqHFgp5mPBoygG5MWTFcd"
+			]
+		}
+	},
+	"version": 1
+}
