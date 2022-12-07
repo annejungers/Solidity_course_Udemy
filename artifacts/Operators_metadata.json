@@ -7,7 +7,7 @@
 		"abi": [
 			{
 				"inputs": [],
-				"name": "x",
+				"name": "calculator",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -15,20 +15,7 @@
 						"type": "uint256"
 					}
 				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "y",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
+				"stateMutability": "pure",
 				"type": "function"
 			}
 		],
@@ -45,7 +32,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"variable_scope1.sol": "C"
+			"arithmetic-operators.sol": "Operators"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -59,12 +46,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"variable_scope1.sol": {
-			"keccak256": "0x57e54cf2d23a37db8fa123eaacfe6c3ef80731c4ebcfdacd80e3c664335b7a76",
+		"arithmetic-operators.sol": {
+			"keccak256": "0x6e393f0c85297a34ac28f78e5d97f9414b2ab5b224e42ff3cc4bc4943a6f5665",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://b194db7f84e32d5585c693babf8831893208d7fffce9c44e4dfba3c94576e05f",
-				"dweb:/ipfs/QmWgdLNbkRhmYC8kPTTqgVzdNVt14jT2Exm6GUNeZyXDDZ"
+				"bzz-raw://add12d7a16945ece2c54d4929fb8259772b3a8e516a01980ed6209ba5c41a957",
+				"dweb:/ipfs/QmZG2sA19j4T4HyLvejJ2ccoqUGkcePRFLfvtEjGvC1v5K"
 			]
 		}
 	},

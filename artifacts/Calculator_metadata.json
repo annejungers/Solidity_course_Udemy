@@ -7,27 +7,8 @@
 		"abi": [
 			{
 				"inputs": [],
-				"name": "x",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "y",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
+				"name": "calculus",
+				"outputs": [],
 				"stateMutability": "view",
 				"type": "function"
 			}
@@ -45,7 +26,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"variable_scope1.sol": "C"
+			"arithmetic-operators.sol": "Calculator"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -59,12 +40,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"variable_scope1.sol": {
-			"keccak256": "0x57e54cf2d23a37db8fa123eaacfe6c3ef80731c4ebcfdacd80e3c664335b7a76",
+		"arithmetic-operators.sol": {
+			"keccak256": "0x6f7094d342b683520be17d98cbdc668c18ca274fc3fd3c6fc2a557508dc3cee0",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://b194db7f84e32d5585c693babf8831893208d7fffce9c44e4dfba3c94576e05f",
-				"dweb:/ipfs/QmWgdLNbkRhmYC8kPTTqgVzdNVt14jT2Exm6GUNeZyXDDZ"
+				"bzz-raw://b32737d073169761c6a2fac5386a08a42d9ab597184f99a0bef5027f128b4969",
+				"dweb:/ipfs/QmWQqXwdW7EJLFY3Fu3DduusVWFLnpdJrUwDqatQ6u2AQj"
 			]
 		}
 	},
