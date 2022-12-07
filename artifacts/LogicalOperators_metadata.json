@@ -32,7 +32,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"logical_operators.sol": "LogicalOperators"
+			"logical_operators1.sol": "LogicalOperators"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -46,12 +46,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"logical_operators.sol": {
-			"keccak256": "0x0413228659092a51b9bec7eeeedc1191fe58277548a9398796867518839207f2",
+		"logical_operators1.sol": {
+			"keccak256": "0xa8e00191f4551cee852c74c2ee54cb6a216fc2688cd966345810d87440c52a1f",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://bbe24b92deefae4ba58e3cd283675c4f979058d463ba0a7399825c135ca2564b",
-				"dweb:/ipfs/QmVtRUE2zyHNfimXgCQDErsVwF3TNbuXk9ZuWUpV18w285"
+				"bzz-raw://ab1fd28741fc3e9eecf4dbf7d0000a8a896f2a640e5708554680a987cd84a3b0",
+				"dweb:/ipfs/QmdcMMbJfKDt9VNetJQrRZzT2Rd7fKhshpv3m1pVXwq35T"
 			]
 		}
 	},
