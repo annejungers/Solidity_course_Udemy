@@ -19,7 +19,7 @@ contract myLoopingPracticeContract {
 
 
     function numbersListLoop(uint userNumber) public view returns(bool){
-            bool numberExists = false; // tant que le user n'a pas trouvé le number, le number n'existe pas = false
+            bool numberExists = false; // as long as the number is not in the list, this is false ,tant que le user n'a pas trouvé le number, le number n'existe pas = false
 
         for(uint i= 0; i < numbersList.length; i++){
             if(numbersList[i] == userNumber){  // if the number that we are iterating in the list is the same as the input in the function then..
