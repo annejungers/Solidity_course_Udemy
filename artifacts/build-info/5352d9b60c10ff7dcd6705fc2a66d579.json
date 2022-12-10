@@ -1,0 +1,71 @@
+{
+	"id": "5352d9b60c10ff7dcd6705fc2a66d579",
+	"_format": "hh-sol-build-info-1",
+	"solcVersion": "0.7.0",
+	"solcLongVersion": "0.7.0+commit.9e61f92b",
+	"input": {
+		"language": "Solidity",
+		"sources": {
+			"constructors.sol": {
+				"content": "// SPDX-License-Identifier: MIT\r\npragma solidity >= 0.7.0 < 0.9.0;\r\n\r\n/*\r\n\r\nCONSTRUCTORS = a special function using  constructor keyword\r\nIt initialises state variables of a contract\r\n\r\nFollowing are key characteristics:\r\n\r\n1. A contract can have only one contructor. \r\n\r\n2. A constructor code is executed once when a contract is created and it is used to initialize contract state \r\n\r\n3. After a constructor code is executed, the final code is deployed to the blockchain \r\n    This final code includes public functions and code reachable through public functions.\r\n    Constructor code or any internal method used only by constructor are not included in final code\r\n\r\n    A constructor can be either public or internal\r\n\r\n    A internal constructor marks the contract as abstract\r\n\r\n    In case , no constructor is defined, a default constructor is present in the contract\r\n\r\n\r\n*/\r\n\r\n\r\n"
+			}
+		},
+		"settings": {
+			"optimizer": {
+				"enabled": false,
+				"runs": 200
+			},
+			"outputSelection": {
+				"*": {
+					"": [
+						"ast"
+					],
+					"*": [
+						"abi",
+						"metadata",
+						"devdoc",
+						"userdoc",
+						"storageLayout",
+						"evm.legacyAssembly",
+						"evm.bytecode",
+						"evm.deployedBytecode",
+						"evm.methodIdentifiers",
+						"evm.gasEstimates",
+						"evm.assembly"
+					]
+				}
+			}
+		}
+	},
+	"output": {
+		"sources": {
+			"constructors.sol": {
+				"ast": {
+					"absolutePath": "constructors.sol",
+					"exportedSymbols": {},
+					"id": 2,
+					"license": "MIT",
+					"nodeType": "SourceUnit",
+					"nodes": [
+						{
+							"id": 1,
+							"literals": [
+								"solidity",
+								">=",
+								"0.7",
+								".0",
+								"<",
+								"0.9",
+								".0"
+							],
+							"nodeType": "PragmaDirective",
+							"src": "33:33:0"
+						}
+					],
+					"src": "33:854:0"
+				},
+				"id": 0
+			}
+		}
+	}
+}
