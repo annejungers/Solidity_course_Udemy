@@ -8,18 +8,26 @@
 			{
 				"inputs": [
 					{
-						"internalType": "string",
-						"name": "_name",
-						"type": "string"
-					},
-					{
 						"internalType": "uint256",
-						"name": "_age",
+						"name": "_data",
 						"type": "uint256"
 					}
 				],
 				"stateMutability": "nonpayable",
 				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "getBaseData",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
 			}
 		],
 		"devdoc": {
@@ -35,7 +43,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"constructors.sol": "Member"
+			"constructors_exo.sol": "Base"
 		},
 		"evmVersion": "istanbul",
 		"libraries": {},
@@ -49,12 +57,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"constructors.sol": {
-			"keccak256": "0xb735a4fddffc9b301c71ebaeab1f9850847ba73bb3b342d966c9348f5304ad78",
+		"constructors_exo.sol": {
+			"keccak256": "0x9d44769fc064b800d79d38995f14ac90b76d554d1067ddcf2296d7bc2d1ce163",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://8ddd6e3df8e20147f477f87a0712b0a9c4f1625519f56a794109370583a62efa",
-				"dweb:/ipfs/QmUsMcAK6aSWzj7o68Ads59DGhqms84GgdszQ6vWKynPMx"
+				"bzz-raw://9f46fdfcb62316551110a68d7adbe6dba102a689ad9d9e727654b1605159b356",
+				"dweb:/ipfs/QmZJbLXzJunNxLRhHdvXVj1UyqCPcbx4WdTzKAohnjSK3y"
 			]
 		}
 	},

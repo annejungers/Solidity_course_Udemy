@@ -9,17 +9,30 @@
 				"inputs": [
 					{
 						"internalType": "string",
-						"name": "_name",
+						"name": "n",
 						"type": "string"
 					},
 					{
 						"internalType": "uint256",
-						"name": "_age",
+						"name": "a",
 						"type": "uint256"
 					}
 				],
 				"stateMutability": "nonpayable",
 				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "getName",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
 			}
 		],
 		"devdoc": {
@@ -35,7 +48,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"constructors.sol": "Member"
+			"constructors.sol": "Teacher"
 		},
 		"evmVersion": "istanbul",
 		"libraries": {},

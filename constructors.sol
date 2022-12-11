@@ -33,10 +33,35 @@ contract Member{
     uint age;
 
     //initialize name and age upon deployment
+    constructor(string memory _name, uint _age) public{
+        name = _name;
+        age = _age;
+    }
+}
 
-    constructor(string memory _name, uint _age)
-
+// we are calling the constructor for this contract
+// first way
+/*
+contract Teacher is Member ("Tigercub", 35){
+    function getName() public view returns(string memory){
+        return name;
+    }
 
 }
+
+*/
+
+//other way to call the constructor but with constructor inside the other contract (advanced constructor)
+contract Teacher is Member{
+
+    constructor(string memory n, uint a) Member( n, a) public {}
+
+    function getName() public view returns(string memory){
+        return name;
+    }
+
+}
+
+
 
 
