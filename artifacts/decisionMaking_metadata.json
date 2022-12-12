@@ -1,0 +1,72 @@
+{
+	"compiler": {
+		"version": "0.7.0+commit.9e61f92b"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "airDrop",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "validateOranges",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"decision-making.sol": "decisionMaking"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"decision-making.sol": {
+			"keccak256": "0x3ce37a9744f83e3ec77e5f3579938c5a42a9acd8447bd6ffefe9484e9f07198c",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://945d73028c4e41434f78e74957bab4337d0f82e2c9264b85a93d4616731934b3",
+				"dweb:/ipfs/QmS7GD8PAR9xdqB7RGjiQ9XS6HGNZc6yyCtj41Xzmck2wg"
+			]
+		}
+	},
+	"version": 1
+}
