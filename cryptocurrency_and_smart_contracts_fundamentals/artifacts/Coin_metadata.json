@@ -1,0 +1,83 @@
+{
+	"compiler": {
+		"version": "0.7.0+commit.9e61f92b"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "balances",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "minter",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"cryptocurrency_and_smart_contracts_fundamentals/subcurrency.sol": "Coin"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"cryptocurrency_and_smart_contracts_fundamentals/subcurrency.sol": {
+			"keccak256": "0x51845fcf1fff6cd42df035904a68e1eec112d82c9f5f244ed49a743ec962bc0e",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://5c7607c76125676426a8d2ea51a4de736345a1866bac0abe8ec48c885f1635d1",
+				"dweb:/ipfs/QmPMJtZLwwB6HLcKfsy76LaiWx3yZnvrU56LkwqGmzPaSN"
+			]
+		}
+	},
+	"version": 1
+}
