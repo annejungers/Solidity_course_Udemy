@@ -1,0 +1,66 @@
+{
+	"compiler": {
+		"version": "0.8.17+commit.8df45f5f"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "getMovie",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "setMovie",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"struts.sol": "StructExercise"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"struts.sol": {
+			"keccak256": "0xee1c9d576ed6a263d9a453e859ce686f0a4b5fc5d4a1e309fa9c2e54bf63e319",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://9808780951cc9c7d0f2dd15701737dc624e21234539a14e7b9a79803969a0d4f",
+				"dweb:/ipfs/QmbRqjYQoLyKCZU6LgWDzrS1dCntTgx6aaTHmhANq2cd1Q"
+			]
+		}
+	},
+	"version": 1
+}
