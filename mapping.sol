@@ -18,24 +18,49 @@ In Solidity you can't iterate though a map, you need to store the keys in an arr
 
 contract learnMapping {
 
-    mapping(address => uint) public myMap;   // each address will have its own value
+    mapping(address => uint) public myMap;   // each address will have its own value --> address : 1; address : 2,...
                                             // here the key is address
+                                            //myMap takes keys and values
     
     // function to get the address
     function getAddress(address _addr) public view returns(uint){
-        return myMap[_addres];
+        return myMap[_addr];
     }
 
 
     // to give the address a value/ function that can add addresses into our map
-    function setAddress(address _adr, uint _i) public{
+    function setAddress(address _addr, uint _i) public{
         myMap[_addr] = _i;
     }
 
-    function removeAddress(address _adr) public{
+    function removeAddress(address _addr) public{
         delete myMap[_addr];
     }
 
+    /*
+    EXO: Mapping Assignment
+    0. Create a unique data type as a struct called Movie and give it the string properties: title and director
+    1. Create a map called movie which takes a uint as a key and Movie as a value
+    2. create a function called addMovie which takes three inputs, movie_id, title and director 
+    which assigns a value if an integer to a movie added back to the movie map.
+    It should include a title and a director name
+    3. Deploy the contract and update the movie information to the movie map with our favorite movies
+
+    */
+    
+    struct Movie{
+        string title;
+        string director;
+    }
+
+    mapping(uint => Movie) public movie;
+
+    function addMovie(uint id, string memory title, string memory director) public{
+        movie[id] = Movie(title, director); // we select the id = the integer for the key, and we can add the title and the director name
+    }
+
+    // you can't iterate through a mapping like you iterate on an object in JS or a dictionnary in Python 
+    // but there are other ways to achieve the same results
 
 }
 
