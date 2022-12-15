@@ -1,0 +1,59 @@
+{
+	"compiler": {
+		"version": "0.8.7+commit.e28d00a7"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "newBalance",
+						"type": "uint256"
+					}
+				],
+				"name": "updatesBalance",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"global_variables.sol": "ledgerBalance"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"global_variables.sol": {
+			"keccak256": "0xcd6d9f11f2db2dc89ee35cde409ac2ce05a35dd2a4536da7c4cdd783b5f03b38",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://53e54afc7a3e5ce266926b59297e5d35f19f2ebc7d4c37df4f6243c51274bfe5",
+				"dweb:/ipfs/QmPuz31Mj7KwnRhc4SDGHo8qiJyW8VXNd4rZQKUQ2WjnXV"
+			]
+		}
+	},
+	"version": 1
+}
