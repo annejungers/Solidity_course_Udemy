@@ -6,18 +6,7 @@
 	"output": {
 		"abi": [
 			{
-				"inputs": [
-					{
-						"internalType": "string",
-						"name": "_name",
-						"type": "string"
-					},
-					{
-						"internalType": "uint256",
-						"name": "_age",
-						"type": "uint256"
-					}
-				],
+				"inputs": [],
 				"stateMutability": "nonpayable",
 				"type": "constructor"
 			}
@@ -35,7 +24,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"constructors.sol": "Member"
+			"Functions/function_modifiers.sol": "Owner"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -49,12 +38,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"constructors.sol": {
-			"keccak256": "0x80165c33091e5f2839df9dc865234f28e78d0a3be197b41dc541f659e3335e1a",
+		"Functions/function_modifiers.sol": {
+			"keccak256": "0xcf8d2ab31b1fa2315cf87ef045c698dbf8442cd1aecd4c875eafa823913a88e4",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://e8f18d2846feecb481752a57d19ec71e6aa58b5cee439432e46c9b1d347912a7",
-				"dweb:/ipfs/Qmdce6Q3mC5qJfyF3mnyNgbhv2ZU7nSeq9NGzKCSwBA8PR"
+				"bzz-raw://6fc609b3edb8e37af3da221af00bd7af9904a91aaba6739c381074bd254f8faf",
+				"dweb:/ipfs/QmYzAkChMSXom4dd9s8vVfM41AKqkhpxcgShSWrq4xpXBi"
 			]
 		}
 	},

@@ -8,7 +8,7 @@ It initialises state variables of a contract. (when we are refering to the state
 
 key characteristics:
 
-1. A contract can only haveone contructor. 
+1. A contract can only have one contructor. 
 
 2. A constructor code is executed once when a contract is created and it is used to initialize contract state 
     Means that when a contract is deployed, the constructor is used to initialize the contract state
@@ -23,7 +23,6 @@ key characteristics:
     A internal constructor marks the contract as abstract
 
     In case , no constructor is defined, a default constructor is present in the contract
-
 
 */
 
