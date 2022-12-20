@@ -6,13 +6,7 @@
 	"output": {
 		"abi": [
 			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "oracleAddress",
-						"type": "address"
-					}
-				],
+				"inputs": [],
 				"stateMutability": "nonpayable",
 				"type": "constructor"
 			},
@@ -41,25 +35,6 @@
 				],
 				"stateMutability": "view",
 				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "uint256",
-						"name": "range",
-						"type": "uint256"
-					}
-				],
-				"name": "randMod",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
 			}
 		],
 		"devdoc": {
@@ -75,7 +50,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"Functions/oracles.sol": "GenerateRandomNumber"
+			"Functions/oracles.sol": "Oracle"
 		},
 		"evmVersion": "london",
 		"libraries": {},
