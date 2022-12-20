@@ -1,0 +1,71 @@
+{
+	"id": "e8e1d422b3e28f02cef5f160d365ac24",
+	"_format": "hh-sol-build-info-1",
+	"solcVersion": "0.8.7",
+	"solcLongVersion": "0.8.7+commit.e28d00a7",
+	"input": {
+		"language": "Solidity",
+		"sources": {
+			"solidity_patterns_cybersecurity.sol/withdraw_pattern_next.sol": {
+				"content": "// SPDX-License-Identifier: MIT\r\npragma solidity >= 0.7.0 < 0.9.0;\r\n\r\n/*\r\nCybersecurity in Solidity\r\n\r\n--> WITHDRAWAL PATTERN  (one of the most important pattern in Solidity)\r\n\r\nWithdrawal pattern ensures that direct transfer call in not made which poses a security threat.\r\nTransfers are atomic(meaning all of nothing)\r\n\r\nHERE\r\nInstead of using transfer which revert the code, we can use send which returns a bool\r\n\r\nWrite a function so only the owner can send Tatianna funds with the send method with logic\r\nto set up what happens if the amount is not sent to Tatianna\r\n\r\n*/"
+			}
+		},
+		"settings": {
+			"optimizer": {
+				"enabled": false,
+				"runs": 200
+			},
+			"outputSelection": {
+				"*": {
+					"": [
+						"ast"
+					],
+					"*": [
+						"abi",
+						"metadata",
+						"devdoc",
+						"userdoc",
+						"storageLayout",
+						"evm.legacyAssembly",
+						"evm.bytecode",
+						"evm.deployedBytecode",
+						"evm.methodIdentifiers",
+						"evm.gasEstimates",
+						"evm.assembly"
+					]
+				}
+			}
+		}
+	},
+	"output": {
+		"sources": {
+			"solidity_patterns_cybersecurity.sol/withdraw_pattern_next.sol": {
+				"ast": {
+					"absolutePath": "solidity_patterns_cybersecurity.sol/withdraw_pattern_next.sol",
+					"exportedSymbols": {},
+					"id": 2,
+					"license": "MIT",
+					"nodeType": "SourceUnit",
+					"nodes": [
+						{
+							"id": 1,
+							"literals": [
+								"solidity",
+								">=",
+								"0.7",
+								".0",
+								"<",
+								"0.9",
+								".0"
+							],
+							"nodeType": "PragmaDirective",
+							"src": "33:33:0"
+						}
+					],
+					"src": "33:543:0"
+				},
+				"id": 0
+			}
+		}
+	}
+}
