@@ -1,0 +1,45 @@
+{
+	"compiler": {
+		"version": "0.8.7+commit.e28d00a7"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"solidity_patterns_cybersecurity.sol/withdraw_pattern_intro.sol": "WithdrawalPattern"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"solidity_patterns_cybersecurity.sol/withdraw_pattern_intro.sol": {
+			"keccak256": "0x3959ec15ffb4cb5075fe963a1f5dcae7e6ba766977d9a85f5244b4bd86fd506e",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://db012bfd156920a80b7eda3a4f5996c571ec4cf3d3a7653b9dcbb6eac375cd9f",
+				"dweb:/ipfs/QmY9WL6TwyCieYF2CkXmqxc7NCzTRKHk4LSc4d4AmHNFuT"
+			]
+		}
+	},
+	"version": 1
+}

@@ -16,7 +16,7 @@ rk: when you create an event, you have to emit this event
 contract Coin {
     // the keyword public is making the variable accessible from other contracts
     address public minter;
-    mapping(address =>uint) public balances;
+    mapping(address =>uint) public balances;// address to the minter wants to send the tokens, uint the current balance/amount of tokens at this address
 
     // event to allow our clients to react to the change that is happening in our contract
     // Sent takes 3 arguments
