@@ -1,0 +1,45 @@
+{
+	"compiler": {
+		"version": "0.8.7+commit.e28d00a7"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"advanced_solidity1/events.sol": "LearnEvents"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"advanced_solidity1/events.sol": {
+			"keccak256": "0x98d9e29f7b474d851729e81d25e766a7c1389d7ec6047753bf85926f4d926290",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://ab3c517d8edad5780f8944ff395bff1fd018043a9245df3e3c6f6bc0e56357e1",
+				"dweb:/ipfs/QmVP37ez4g9Av6HsUR5cS46R5WVLjLsMBuQp2d6MQeei6a"
+			]
+		}
+	},
+	"version": 1
+}

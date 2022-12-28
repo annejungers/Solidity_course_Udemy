@@ -1,0 +1,65 @@
+{
+	"compiler": {
+		"version": "0.8.7+commit.e28d00a7"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "input",
+						"type": "uint256"
+					}
+				],
+				"name": "innerAddTen",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"advanced_solidity1/inheritance.sol": "A"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"advanced_solidity1/inheritance.sol": {
+			"keccak256": "0x418f0e4e6ce82558eb2855457acc7f5facdb140713bfade2ca4b7c88b48fc078",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://ed89fe144c53c02aa5fcdab7d2edc297c38b929a6a7d02248424167b63b8d472",
+				"dweb:/ipfs/QmaYxo6Xg2Ujx8Z1jdzNSurhwcMSEXywV6vh8AomK5Kmvk"
+			]
+		}
+	},
+	"version": 1
+}
