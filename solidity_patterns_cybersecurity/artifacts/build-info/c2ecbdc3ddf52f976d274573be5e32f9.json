@@ -1,0 +1,71 @@
+{
+	"id": "c2ecbdc3ddf52f976d274573be5e32f9",
+	"_format": "hh-sol-build-info-1",
+	"solcVersion": "0.8.7",
+	"solcLongVersion": "0.8.7+commit.e28d00a7",
+	"input": {
+		"language": "Solidity",
+		"sources": {
+			"solidity_patterns_cybersecurity/withdraw_pattern_next.sol": {
+				"content": "// SPDX-License-Identifier: MIT\r\npragma solidity >= 0.7.0 < 0.9.0;\r\n\r\n/*\r\nCybersecurity in Solidity\r\n\r\n--> WITHDRAWAL PATTERN  (one of the most important pattern in Solidity)\r\n\r\nWithdrawal pattern ensures that direct transfer call in not made which poses a security threat.\r\nTransfers are atomic(meaning all of nothing)\r\n\r\nHERE\r\nInstead of using transfer which revert the code, we can use send which returns a bool\r\n\r\nWrite a function so only the owner can send Tatianna funds with the send method with logic\r\nto set up what happens if the amount is not sent to Tatianna\r\n\r\n*/\r\n/*\r\nfunction sendRefund()  onlyOwner returns(bool success){\r\n    if(!tatiana.send(amount)){\r\n        // do something with the failure\r\n    }\r\n}\r\n\r\n*/\r\n\r\n// this can still get messy for accounting... \r\n\r\n/*\r\nWrite a withdrawal function so that the investor can withdraw funds on their own through that functionality\r\nLet the do it themselves\r\nEnter our best friend over here  - msg.sender\r\n*/\r\n\r\n/*\r\n\r\nWrite another function to claim refunds. Write a function called claimRefund which requires that the balance of the \r\nmsg.sender is greater than 0 and transfer the balance to the current caller.\r\nPseudo balance var named balance\r\n*/\r\n/*\r\nfunction claimRefunds() {\r\n    require(balance[msg.sender]> 0);\r\n    msg.sender.transfer(balance[msg.sender]);\r\n}\r\n*/\r\n\r\n//by the customer working directly to claim a refund with their contract address we eliminate the outside interference\r\n// veryyy greatly\r\n\r\n// BY MAKING OUR TRANSACTIONS ONE A a TIME we greatly reduce danger to our executions - withdrawal patterns\r\n\r\n/*\r\nEXO TIME\r\nIt is not safe to interact  with more than one customer at a time, so write a function to return funds using withdrawal pattern\r\n\r\n1. Write a function called withdrawFunds that takes an amount and returns bool success in the signature.\r\n2. Require that the balance of the current caller is greater than or equal to the amount \r\n3. Substract the amount from the balance  of the current sender \r\n4. Transfer the amount over and return the trueness of the function\r\n*/\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n"
+			}
+		},
+		"settings": {
+			"optimizer": {
+				"enabled": false,
+				"runs": 200
+			},
+			"outputSelection": {
+				"*": {
+					"": [
+						"ast"
+					],
+					"*": [
+						"abi",
+						"metadata",
+						"devdoc",
+						"userdoc",
+						"storageLayout",
+						"evm.legacyAssembly",
+						"evm.bytecode",
+						"evm.deployedBytecode",
+						"evm.methodIdentifiers",
+						"evm.gasEstimates",
+						"evm.assembly"
+					]
+				}
+			}
+		}
+	},
+	"output": {
+		"sources": {
+			"solidity_patterns_cybersecurity/withdraw_pattern_next.sol": {
+				"ast": {
+					"absolutePath": "solidity_patterns_cybersecurity/withdraw_pattern_next.sol",
+					"exportedSymbols": {},
+					"id": 2,
+					"license": "MIT",
+					"nodeType": "SourceUnit",
+					"nodes": [
+						{
+							"id": 1,
+							"literals": [
+								"solidity",
+								">=",
+								"0.7",
+								".0",
+								"<",
+								"0.9",
+								".0"
+							],
+							"nodeType": "PragmaDirective",
+							"src": "33:33:0"
+						}
+					],
+					"src": "33:2074:0"
+				},
+				"id": 0
+			}
+		}
+	}
+}
