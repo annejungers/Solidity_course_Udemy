@@ -58,8 +58,32 @@ contract RestrictedAccess{
     }
 
     // write a function that can disown the current owner 
-    function disown() onlyBy(owner) public {
+    // only run the function 3 weeks or 5 secocds after the creation of the contract
+    function disown() onlyBy(owner) onlyAfter(creationTime + 5 seconds) public {
         delete owner;
     }
+
+
+    /*
+    Exercise:
+    1. Create a modifier called osts which takes an _amount parameter
+    2. Require that msg.value is greater than or equal to the amount
+    3. If the msg.value is not greather than or equal to the amount
+        return a string that says Not enough Ether provided
+    4. Write a function called forceOwnerChange which takes an address called _newOwner and is payable
+    5. Add a modification to the signature so that the function needs 200 ehter  to execute
+    6. Set the owner of the contract to the new owner of the address
+    7. BONUS****** Figure out how to make the function actually run!!
+    */
+
+    modifier costs(uint _amount){
+        require(msg.value >= _amount, "Not enough Ether provided");
+        _;
+    }
+
+    function forceOwnerChange(address _newOwner) payable public costs(200 ether){
+        owner = _newOwner;
+    }
+
 
 }
