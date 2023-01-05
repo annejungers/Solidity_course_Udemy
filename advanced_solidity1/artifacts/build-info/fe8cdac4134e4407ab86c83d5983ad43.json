@@ -1,0 +1,71 @@
+{
+	"id": "fe8cdac4134e4407ab86c83d5983ad43",
+	"_format": "hh-sol-build-info-1",
+	"solcVersion": "0.8.7",
+	"solcLongVersion": "0.8.7+commit.e28d00a7",
+	"input": {
+		"language": "Solidity",
+		"sources": {
+			"advanced_solidity1/exam_entrance.sol": {
+				"content": "// SPDX-License-Identifier: MIT\r\npragma solidity >=0.7.0 < 0.9.0;\r\n\r\n/*\r\nEXAM ENTRANCE ADVANCED SOLIDITY \r\n--> if you are not able to pass the exam, you have to make some revisions\r\n\r\nThink to smart contracts in terms of Gateway of data\r\nthey are the keepers of data\r\n\r\n1. Create 3 contracts c, D and E\r\n\r\n2. Do the following in contract C:\r\n    a. Create an integer state variable called data which  can only be used internally and not at all in other  contract\r\n    b. Create an integer state variable called  info which can be called  both inside and outside the contract\r\n    c. immediately initialize info's value to 10 within a constructor\r\n    d. Create a function called increment which can only be used  internally and not at all in any other contracts\r\n        It should take an input integer called a and be read only returning the calculation of its input +1\r\n    e. Write a function called dupdateData which takes an integer argument caled a and sets data to the argument\r\n        The function should be able  to be called  both inside and outside the contract\r\n    f. Write  a read only function called getData which returns value of the data and can be called both inside and outside the contract \r\n    g. Write a read only function called copute which calculates and returns two integer arguments a + b\r\n        the function can onl be used internally or by derived contracts\r\n\r\n\r\n    Do the following in contract D:\r\n    a.derive contract C to a new variable c and set a new instance of the contract to it\r\n    b. write a read only function called readInfo which returns the info from contract c\r\n    which can be called both inside and outside the contract \r\n\r\n\r\n    Do the following in contract E:\r\n    a. inherit contract C into E with the special keyword is (inheritance)\r\n    b. create an integer called result which can only  be used  internally and not even by derived  contracts.\r\n    c. Create a private variable c which can inherits the contract C\r\n    d. immediately set the variable c to a new instance of the contract C upon deployment with a constructor\r\n    e. Write a function  called getComputedResult  which sets the values of 23 and 5 to the compute function in contract C to the var result\r\n        the function can be used both externally and internally\r\n    f. create a public read only function called getResult which returns the var result\r\n    g. create a read only function which returns  the info variable from contract C and set the function\r\n        to be used both externally and internally\r\n\r\n\r\nDon't forget to celebrate completing this long exercise because you deserve it!!!\r\n\r\n\r\n*/"
+			}
+		},
+		"settings": {
+			"optimizer": {
+				"enabled": false,
+				"runs": 200
+			},
+			"outputSelection": {
+				"*": {
+					"": [
+						"ast"
+					],
+					"*": [
+						"abi",
+						"metadata",
+						"devdoc",
+						"userdoc",
+						"storageLayout",
+						"evm.legacyAssembly",
+						"evm.bytecode",
+						"evm.deployedBytecode",
+						"evm.methodIdentifiers",
+						"evm.gasEstimates",
+						"evm.assembly"
+					]
+				}
+			}
+		}
+	},
+	"output": {
+		"sources": {
+			"advanced_solidity1/exam_entrance.sol": {
+				"ast": {
+					"absolutePath": "advanced_solidity1/exam_entrance.sol",
+					"exportedSymbols": {},
+					"id": 2,
+					"license": "MIT",
+					"nodeType": "SourceUnit",
+					"nodes": [
+						{
+							"id": 1,
+							"literals": [
+								"solidity",
+								">=",
+								"0.7",
+								".0",
+								"<",
+								"0.9",
+								".0"
+							],
+							"nodeType": "PragmaDirective",
+							"src": "33:32:0"
+						}
+					],
+					"src": "33:2599:0"
+				},
+				"id": 0
+			}
+		}
+	}
+}

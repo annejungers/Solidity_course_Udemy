@@ -45,3 +45,15 @@ contract MyContract {
         return ICounter(_counter).count();
     }
 }
+
+
+/*
+Exercise -  INTERFACES IN UNISWAP (decentralized exchange)
+In Uniswap
+
+
+
+
+
+
+*/

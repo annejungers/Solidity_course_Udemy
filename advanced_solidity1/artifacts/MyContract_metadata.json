@@ -66,11 +66,11 @@
 	},
 	"sources": {
 		"advanced_solidity1/interfaces.sol": {
-			"keccak256": "0x7b3c66d31d0ffab2197ffa77ea2a7a987e2692bd71a9d47d9f72be9c3d9b3253",
+			"keccak256": "0x5163347ba02c46a3a24a54449cf24c5469b3859ca0a12a8b045ce0bc09c89275",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://e07efe2225671bdb5236d7a8a99947687b119f5a0b50157741b3c5f18e838137",
-				"dweb:/ipfs/QmYpFgRMRrQZ3JW9cos3BHrPUNw1sEHRz5xmeG51p6x2mP"
+				"bzz-raw://0fcdc502be8b3bdd9808f21dbd7ab7aae662fa83036ce6276de1ef1bd41b0158",
+				"dweb:/ipfs/QmVMPJpiRYxKyf5gtEzoWyNcz1KY2ocqrscnggBA3grQzB"
 			]
 		}
 	},

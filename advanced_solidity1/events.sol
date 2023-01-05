@@ -5,7 +5,12 @@ pragma solidity >= 0.7.0 < 0.9.0;
 EVENTS
 people who can access events are outside
 
-Abstraction - Decentralized Exchange: 
+Abstraction - Decentralized Exchange: On a smart contract traders can trade tokens  - from the smart contract emit an event so
+they can get the data (via web front mobile )
+
+after emitting events, you can read  them in the post only for entities outside the of the blockchain - not stored as memory
+events have lower gas cost than storage - on way transmission
+not stored in memory, that's why they have lower gas costs
 
 
 
