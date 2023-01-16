@@ -7,7 +7,20 @@
 		"abi": [
 			{
 				"inputs": [],
-				"name": "y",
+				"name": "returnAge",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "setName",
 				"outputs": [
 					{
 						"internalType": "string",
@@ -32,7 +45,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"advanced_solidity1/abstract_contracts.sol": "B"
+			"advanced_solidity1/abstract_contracts.sol": "Teacher"
 		},
 		"evmVersion": "london",
 		"libraries": {},

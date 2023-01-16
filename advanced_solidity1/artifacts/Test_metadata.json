@@ -7,12 +7,12 @@
 		"abi": [
 			{
 				"inputs": [],
-				"name": "y",
+				"name": "getResult",
 				"outputs": [
 					{
-						"internalType": "string",
+						"internalType": "uint256",
 						"name": "",
-						"type": "string"
+						"type": "uint256"
 					}
 				],
 				"stateMutability": "view",
@@ -32,7 +32,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"advanced_solidity1/abstract_contracts.sol": "B"
+			"advanced_solidity1/abstract_contracts.sol": "Test"
 		},
 		"evmVersion": "london",
 		"libraries": {},

@@ -5,7 +5,7 @@ pragma solidity >= 0.7.0 < 0.9.0;
 
 *********  Inheritance
 
-Inheritance is a way to extend functionality of a contract 
+Inheritance is a way to extend functionality of a contract. = a contract will inherit the properties/functionnalities of another contract
 Solidity supports both single as well as multiple inheritance
 
 Observe: The contract in Solidity is similar to a Class in C++ and Javascript  = a blueprint for an object
