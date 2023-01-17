@@ -39,7 +39,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"advanced_solidity1/interfaces.sol": "Counter"
+			"advanced_solidity1/interfaces1.sol": "Counter"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -53,12 +53,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"advanced_solidity1/interfaces.sol": {
-			"keccak256": "0x5163347ba02c46a3a24a54449cf24c5469b3859ca0a12a8b045ce0bc09c89275",
+		"advanced_solidity1/interfaces1.sol": {
+			"keccak256": "0xa8cdefe4000ba2b275badc88161facdc0865c53f6ef1d14c502e18722922a43d",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://0fcdc502be8b3bdd9808f21dbd7ab7aae662fa83036ce6276de1ef1bd41b0158",
-				"dweb:/ipfs/QmVMPJpiRYxKyf5gtEzoWyNcz1KY2ocqrscnggBA3grQzB"
+				"bzz-raw://401edf3d819137c85296c434e07e8155a3f777306cba5908addae4c2a049da2b",
+				"dweb:/ipfs/QmWxwxz1nvjhZwsu39UcechxJ3BL3qQNz1kAWfNkKBwhCs"
 			]
 		}
 	},

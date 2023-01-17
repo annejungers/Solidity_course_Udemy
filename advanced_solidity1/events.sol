@@ -9,7 +9,7 @@ people who can access events are outside
 Example: Decentralized Exchange: On a smart contract traders can trade tokens  - from the smart contract emit an event so
 they can get the data (via web front mobile application )
 
-after emitting events, you can't read them in the past, only the people outside the of the blockchain  can access it- 
+after emitting events, you can't read them in the past, only the people outside of the blockchain  can access it- 
 Events do not get stored as memory/ not stored in memory, that's why they have lower gas costs
 it is a one way transmission - events have lower gas cost than storage 
 
