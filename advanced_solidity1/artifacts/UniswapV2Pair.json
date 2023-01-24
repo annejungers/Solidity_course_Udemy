@@ -48,7 +48,33 @@
 			"sourceMap": ""
 		},
 		"gasEstimates": null,
-		"methodIdentifiers": {}
+		"methodIdentifiers": {
+			"getReserves()": "0902f1ac"
+		}
 	},
-	"abi": []
+	"abi": [
+		{
+			"inputs": [],
+			"name": "getReserves",
+			"outputs": [
+				{
+					"internalType": "uint112",
+					"name": "reserve0",
+					"type": "uint112"
+				},
+				{
+					"internalType": "uint112",
+					"name": "reserve1",
+					"type": "uint112"
+				},
+				{
+					"internalType": "uint32",
+					"name": "blockTimestampLast",
+					"type": "uint32"
+				}
+			],
+			"stateMutability": "view",
+			"type": "function"
+		}
+	]
 }

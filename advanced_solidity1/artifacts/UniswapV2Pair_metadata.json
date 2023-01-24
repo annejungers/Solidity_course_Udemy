@@ -4,7 +4,31 @@
 	},
 	"language": "Solidity",
 	"output": {
-		"abi": [],
+		"abi": [
+			{
+				"inputs": [],
+				"name": "getReserves",
+				"outputs": [
+					{
+						"internalType": "uint112",
+						"name": "reserve0",
+						"type": "uint112"
+					},
+					{
+						"internalType": "uint112",
+						"name": "reserve1",
+						"type": "uint112"
+					},
+					{
+						"internalType": "uint32",
+						"name": "blockTimestampLast",
+						"type": "uint32"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
 		"devdoc": {
 			"kind": "dev",
 			"methods": {},
@@ -33,11 +57,11 @@
 	},
 	"sources": {
 		"advanced_solidity1/interfaces1.sol": {
-			"keccak256": "0xa8cdefe4000ba2b275badc88161facdc0865c53f6ef1d14c502e18722922a43d",
+			"keccak256": "0x71d9177e40fab27e35bc6b002aa9796da21fe1b3bce9b06b201bbf2b111fc1f6",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://401edf3d819137c85296c434e07e8155a3f777306cba5908addae4c2a049da2b",
-				"dweb:/ipfs/QmWxwxz1nvjhZwsu39UcechxJ3BL3qQNz1kAWfNkKBwhCs"
+				"bzz-raw://7dbb473412ea8b7eda9e1ea3858a6837d18d2de485ee85e49eab0cc133f6b942",
+				"dweb:/ipfs/QmTFCgaHVkfQoForcMyzBqLFEfG1fsFiGkqxV4u66Fedfy"
 			]
 		}
 	},

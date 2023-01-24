@@ -55,7 +55,7 @@ In this exercise, you are going to use the IDE to speak to Uniswap and get the r
 
 These are the instructions in order to complete this exercise:
 1. Create two interfaces with each hold separate function signatures which you must look up in the Solidity docs V2.
-2. One interface will be called UniswapV2Factory which will contain the function signature that gets pairs.
+2. One interface will be called UniswapV2Factory which will contain the function signature that gets pairs.  (pairs of token that you exchange/swap)
 3. Another interface will be called UniswapV2Pair which will contain the function signature to get reserve values.
 4. Create a contract which contains addresses of the paired tokens you choose as well as  the factory address of Uniswap  // go to Etherscan
 5. Within the contract make a function which can successfully gets the pair of your tokens and set it to a single address
@@ -67,12 +67,30 @@ These are the instructions in order to complete this exercise:
 
 */
 
+// you have to go to that link, the documentation uniswap v2, to find the specific functions  https://docs.uniswap.org/contracts/v2/reference/smart-contracts/pair
+
 
 interface UniswapV2Factory{    // function signature that gets pairs
+     function getPair(address tokenA, address tokenB) external view returns (address pair);
 
 }
 
 interface UniswapV2Pair{       // function signature that gets reserve values
 
+    function getReserves() external view returns (uint112 reserve0, uint112 reserve1, uint32 blockTimestampLast);
+}
 
+contract MyContract2 {
+    address private factory = 0x5C69bEe701ef814a2B6a3EDD4B1652CB9cc5aA6f;
+    // I look on Etherscan DAI = stable token, dai is running on ehtereum 
+    address private dai = 0x6B175474E89094C44Da98b954EedeAC495271d0F;
+    address private weth = 0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2;
+
+    function getReserveTokens() external view returns (uint, uint){
+        address pair = UniswapV2Factory(factory).getPair(dai, weth); // we create an address from the 2 addresses 
+        (uint reserve0, uint reserve1,) = UniswapV2Pair(pair).getReserves();
+        return (reserve0, reserve1); 
+
+
+    }
 }
