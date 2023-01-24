@@ -1,0 +1,805 @@
+{
+	"id": "31db2a08919675c912fc45ab77967279",
+	"_format": "hh-sol-build-info-1",
+	"solcVersion": "0.8.7",
+	"solcLongVersion": "0.8.7+commit.e28d00a7",
+	"input": {
+		"language": "Solidity",
+		"sources": {
+			"advanced_solidity1/assembly.sol": {
+				"content": "pragma solidity >= 0.7.0 < 0.9.0;\r\n\r\n/*\r\nSolidity provides an option to use assembly language to write  inline assembly within Solidity source code.\r\n\r\nAssembly is a low level language that allows you to directly manipulate the EVM (more dangerous and not recommended)\r\n\r\nEVM = smart contracts are not the real code in the blockchain - solidity code is compiled  to a lower level language\r\n*/\r\n\r\ncontract LearnAssembly {\r\n    function addToEVM() external{\r\n        uint x;\r\n        uint y;\r\n        uint z;\r\n    }\r\n\r\n    // all of this is compiled to low level instructions (opcodes - in total there is around 100)\r\n\r\n    // how the heck to we use assembly? \r\n    \r\n}"
+			}
+		},
+		"settings": {
+			"optimizer": {
+				"enabled": false,
+				"runs": 200
+			},
+			"outputSelection": {
+				"*": {
+					"": [
+						"ast"
+					],
+					"*": [
+						"abi",
+						"metadata",
+						"devdoc",
+						"userdoc",
+						"storageLayout",
+						"evm.legacyAssembly",
+						"evm.bytecode",
+						"evm.deployedBytecode",
+						"evm.methodIdentifiers",
+						"evm.gasEstimates",
+						"evm.assembly"
+					]
+				}
+			}
+		}
+	},
+	"output": {
+		"contracts": {
+			"advanced_solidity1/assembly.sol": {
+				"LearnAssembly": {
+					"abi": [
+						{
+							"inputs": [],
+							"name": "addToEVM",
+							"outputs": [],
+							"stateMutability": "nonpayable",
+							"type": "function"
+						}
+					],
+					"devdoc": {
+						"kind": "dev",
+						"methods": {},
+						"version": 1
+					},
+					"evm": {
+						"assembly": "    /* \"advanced_solidity1/assembly.sol\":396:667  contract LearnAssembly {\r... */\n  mstore(0x40, 0x80)\n  callvalue\n  dup1\n  iszero\n  tag_1\n  jumpi\n  0x00\n  dup1\n  revert\ntag_1:\n  pop\n  dataSize(sub_0)\n  dup1\n  dataOffset(sub_0)\n  0x00\n  codecopy\n  0x00\n  return\nstop\n\nsub_0: assembly {\n        /* \"advanced_solidity1/assembly.sol\":396:667  contract LearnAssembly {\r... */\n      mstore(0x40, 0x80)\n      callvalue\n      dup1\n      iszero\n      tag_1\n      jumpi\n      0x00\n      dup1\n      revert\n    tag_1:\n      pop\n      jumpi(tag_2, lt(calldatasize, 0x04))\n      shr(0xe0, calldataload(0x00))\n      dup1\n      0xdadf8fee\n      eq\n      tag_3\n      jumpi\n    tag_2:\n      0x00\n      dup1\n      revert\n        /* \"advanced_solidity1/assembly.sol\":426:513  function addToEVM() external{\r... */\n    tag_3:\n      tag_4\n      tag_5\n      jump\t// in\n    tag_4:\n      stop\n    tag_5:\n      jump\t// out\n\n    auxdata: 0xa264697066735822122030fc511362205f3d15d33ed0674467f8e71c0654b4d27cdc19cde50499b6cd3b64736f6c63430008070033\n}\n",
+						"bytecode": {
+							"functionDebugData": {},
+							"generatedSources": [],
+							"linkReferences": {},
+							"object": "6080604052348015600f57600080fd5b50606d80601d6000396000f3fe6080604052348015600f57600080fd5b506004361060285760003560e01c8063dadf8fee14602d575b600080fd5b60336035565b005b56fea264697066735822122030fc511362205f3d15d33ed0674467f8e71c0654b4d27cdc19cde50499b6cd3b64736f6c63430008070033",
+							"opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE CALLVALUE DUP1 ISZERO PUSH1 0xF JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP PUSH1 0x6D DUP1 PUSH1 0x1D PUSH1 0x0 CODECOPY PUSH1 0x0 RETURN INVALID PUSH1 0x80 PUSH1 0x40 MSTORE CALLVALUE DUP1 ISZERO PUSH1 0xF JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP PUSH1 0x4 CALLDATASIZE LT PUSH1 0x28 JUMPI PUSH1 0x0 CALLDATALOAD PUSH1 0xE0 SHR DUP1 PUSH4 0xDADF8FEE EQ PUSH1 0x2D JUMPI JUMPDEST PUSH1 0x0 DUP1 REVERT JUMPDEST PUSH1 0x33 PUSH1 0x35 JUMP JUMPDEST STOP JUMPDEST JUMP INVALID LOG2 PUSH5 0x6970667358 0x22 SLT KECCAK256 ADDRESS 0xFC MLOAD SGT PUSH3 0x205F3D ISZERO 0xD3 RETURNDATACOPY 0xD0 PUSH8 0x4467F8E71C0654B4 0xD2 PUSH29 0xDC19CDE50499B6CD3B64736F6C63430008070033000000000000000000 ",
+							"sourceMap": "396:271:0:-:0;;;;;;;;;;;;;;;;;;;"
+						},
+						"deployedBytecode": {
+							"functionDebugData": {
+								"@addToEVM_14": {
+									"entryPoint": 53,
+									"id": 14,
+									"parameterSlots": 0,
+									"returnSlots": 0
+								}
+							},
+							"generatedSources": [],
+							"immutableReferences": {},
+							"linkReferences": {},
+							"object": "6080604052348015600f57600080fd5b506004361060285760003560e01c8063dadf8fee14602d575b600080fd5b60336035565b005b56fea264697066735822122030fc511362205f3d15d33ed0674467f8e71c0654b4d27cdc19cde50499b6cd3b64736f6c63430008070033",
+							"opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE CALLVALUE DUP1 ISZERO PUSH1 0xF JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP PUSH1 0x4 CALLDATASIZE LT PUSH1 0x28 JUMPI PUSH1 0x0 CALLDATALOAD PUSH1 0xE0 SHR DUP1 PUSH4 0xDADF8FEE EQ PUSH1 0x2D JUMPI JUMPDEST PUSH1 0x0 DUP1 REVERT JUMPDEST PUSH1 0x33 PUSH1 0x35 JUMP JUMPDEST STOP JUMPDEST JUMP INVALID LOG2 PUSH5 0x6970667358 0x22 SLT KECCAK256 ADDRESS 0xFC MLOAD SGT PUSH3 0x205F3D ISZERO 0xD3 RETURNDATACOPY 0xD0 PUSH8 0x4467F8E71C0654B4 0xD2 PUSH29 0xDC19CDE50499B6CD3B64736F6C63430008070033000000000000000000 ",
+							"sourceMap": "396:271:0:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;426:87;;;:::i;:::-;;;:::o"
+						},
+						"gasEstimates": {
+							"creation": {
+								"codeDepositCost": "21800",
+								"executionCost": "75",
+								"totalCost": "21875"
+							},
+							"external": {
+								"addToEVM()": "122"
+							}
+						},
+						"legacyAssembly": {
+							".code": [
+								{
+									"begin": 396,
+									"end": 667,
+									"name": "PUSH",
+									"source": 0,
+									"value": "80"
+								},
+								{
+									"begin": 396,
+									"end": 667,
+									"name": "PUSH",
+									"source": 0,
+									"value": "40"
+								},
+								{
+									"begin": 396,
+									"end": 667,
+									"name": "MSTORE",
+									"source": 0
+								},
+								{
+									"begin": 396,
+									"end": 667,
+									"name": "CALLVALUE",
+									"source": 0
+								},
+								{
+									"begin": 396,
+									"end": 667,
+									"name": "DUP1",
+									"source": 0
+								},
+								{
+									"begin": 396,
+									"end": 667,
+									"name": "ISZERO",
+									"source": 0
+								},
+								{
+									"begin": 396,
+									"end": 667,
+									"name": "PUSH [tag]",
+									"source": 0,
+									"value": "1"
+								},
+								{
+									"begin": 396,
+									"end": 667,
+									"name": "JUMPI",
+									"source": 0
+								},
+								{
+									"begin": 396,
+									"end": 667,
+									"name": "PUSH",
+									"source": 0,
+									"value": "0"
+								},
+								{
+									"begin": 396,
+									"end": 667,
+									"name": "DUP1",
+									"source": 0
+								},
+								{
+									"begin": 396,
+									"end": 667,
+									"name": "REVERT",
+									"source": 0
+								},
+								{
+									"begin": 396,
+									"end": 667,
+									"name": "tag",
+									"source": 0,
+									"value": "1"
+								},
+								{
+									"begin": 396,
+									"end": 667,
+									"name": "JUMPDEST",
+									"source": 0
+								},
+								{
+									"begin": 396,
+									"end": 667,
+									"name": "POP",
+									"source": 0
+								},
+								{
+									"begin": 396,
+									"end": 667,
+									"name": "PUSH #[$]",
+									"source": 0,
+									"value": "0000000000000000000000000000000000000000000000000000000000000000"
+								},
+								{
+									"begin": 396,
+									"end": 667,
+									"name": "DUP1",
+									"source": 0
+								},
+								{
+									"begin": 396,
+									"end": 667,
+									"name": "PUSH [$]",
+									"source": 0,
+									"value": "0000000000000000000000000000000000000000000000000000000000000000"
+								},
+								{
+									"begin": 396,
+									"end": 667,
+									"name": "PUSH",
+									"source": 0,
+									"value": "0"
+								},
+								{
+									"begin": 396,
+									"end": 667,
+									"name": "CODECOPY",
+									"source": 0
+								},
+								{
+									"begin": 396,
+									"end": 667,
+									"name": "PUSH",
+									"source": 0,
+									"value": "0"
+								},
+								{
+									"begin": 396,
+									"end": 667,
+									"name": "RETURN",
+									"source": 0
+								}
+							],
+							".data": {
+								"0": {
+									".auxdata": "a264697066735822122030fc511362205f3d15d33ed0674467f8e71c0654b4d27cdc19cde50499b6cd3b64736f6c63430008070033",
+									".code": [
+										{
+											"begin": 396,
+											"end": 667,
+											"name": "PUSH",
+											"source": 0,
+											"value": "80"
+										},
+										{
+											"begin": 396,
+											"end": 667,
+											"name": "PUSH",
+											"source": 0,
+											"value": "40"
+										},
+										{
+											"begin": 396,
+											"end": 667,
+											"name": "MSTORE",
+											"source": 0
+										},
+										{
+											"begin": 396,
+											"end": 667,
+											"name": "CALLVALUE",
+											"source": 0
+										},
+										{
+											"begin": 396,
+											"end": 667,
+											"name": "DUP1",
+											"source": 0
+										},
+										{
+											"begin": 396,
+											"end": 667,
+											"name": "ISZERO",
+											"source": 0
+										},
+										{
+											"begin": 396,
+											"end": 667,
+											"name": "PUSH [tag]",
+											"source": 0,
+											"value": "1"
+										},
+										{
+											"begin": 396,
+											"end": 667,
+											"name": "JUMPI",
+											"source": 0
+										},
+										{
+											"begin": 396,
+											"end": 667,
+											"name": "PUSH",
+											"source": 0,
+											"value": "0"
+										},
+										{
+											"begin": 396,
+											"end": 667,
+											"name": "DUP1",
+											"source": 0
+										},
+										{
+											"begin": 396,
+											"end": 667,
+											"name": "REVERT",
+											"source": 0
+										},
+										{
+											"begin": 396,
+											"end": 667,
+											"name": "tag",
+											"source": 0,
+											"value": "1"
+										},
+										{
+											"begin": 396,
+											"end": 667,
+											"name": "JUMPDEST",
+											"source": 0
+										},
+										{
+											"begin": 396,
+											"end": 667,
+											"name": "POP",
+											"source": 0
+										},
+										{
+											"begin": 396,
+											"end": 667,
+											"name": "PUSH",
+											"source": 0,
+											"value": "4"
+										},
+										{
+											"begin": 396,
+											"end": 667,
+											"name": "CALLDATASIZE",
+											"source": 0
+										},
+										{
+											"begin": 396,
+											"end": 667,
+											"name": "LT",
+											"source": 0
+										},
+										{
+											"begin": 396,
+											"end": 667,
+											"name": "PUSH [tag]",
+											"source": 0,
+											"value": "2"
+										},
+										{
+											"begin": 396,
+											"end": 667,
+											"name": "JUMPI",
+											"source": 0
+										},
+										{
+											"begin": 396,
+											"end": 667,
+											"name": "PUSH",
+											"source": 0,
+											"value": "0"
+										},
+										{
+											"begin": 396,
+											"end": 667,
+											"name": "CALLDATALOAD",
+											"source": 0
+										},
+										{
+											"begin": 396,
+											"end": 667,
+											"name": "PUSH",
+											"source": 0,
+											"value": "E0"
+										},
+										{
+											"begin": 396,
+											"end": 667,
+											"name": "SHR",
+											"source": 0
+										},
+										{
+											"begin": 396,
+											"end": 667,
+											"name": "DUP1",
+											"source": 0
+										},
+										{
+											"begin": 396,
+											"end": 667,
+											"name": "PUSH",
+											"source": 0,
+											"value": "DADF8FEE"
+										},
+										{
+											"begin": 396,
+											"end": 667,
+											"name": "EQ",
+											"source": 0
+										},
+										{
+											"begin": 396,
+											"end": 667,
+											"name": "PUSH [tag]",
+											"source": 0,
+											"value": "3"
+										},
+										{
+											"begin": 396,
+											"end": 667,
+											"name": "JUMPI",
+											"source": 0
+										},
+										{
+											"begin": 396,
+											"end": 667,
+											"name": "tag",
+											"source": 0,
+											"value": "2"
+										},
+										{
+											"begin": 396,
+											"end": 667,
+											"name": "JUMPDEST",
+											"source": 0
+										},
+										{
+											"begin": 396,
+											"end": 667,
+											"name": "PUSH",
+											"source": 0,
+											"value": "0"
+										},
+										{
+											"begin": 396,
+											"end": 667,
+											"name": "DUP1",
+											"source": 0
+										},
+										{
+											"begin": 396,
+											"end": 667,
+											"name": "REVERT",
+											"source": 0
+										},
+										{
+											"begin": 426,
+											"end": 513,
+											"name": "tag",
+											"source": 0,
+											"value": "3"
+										},
+										{
+											"begin": 426,
+											"end": 513,
+											"name": "JUMPDEST",
+											"source": 0
+										},
+										{
+											"begin": 426,
+											"end": 513,
+											"name": "PUSH [tag]",
+											"source": 0,
+											"value": "4"
+										},
+										{
+											"begin": 426,
+											"end": 513,
+											"name": "PUSH [tag]",
+											"source": 0,
+											"value": "5"
+										},
+										{
+											"begin": 426,
+											"end": 513,
+											"name": "JUMP",
+											"source": 0,
+											"value": "[in]"
+										},
+										{
+											"begin": 426,
+											"end": 513,
+											"name": "tag",
+											"source": 0,
+											"value": "4"
+										},
+										{
+											"begin": 426,
+											"end": 513,
+											"name": "JUMPDEST",
+											"source": 0
+										},
+										{
+											"begin": 426,
+											"end": 513,
+											"name": "STOP",
+											"source": 0
+										},
+										{
+											"begin": 426,
+											"end": 513,
+											"name": "tag",
+											"source": 0,
+											"value": "5"
+										},
+										{
+											"begin": 426,
+											"end": 513,
+											"name": "JUMPDEST",
+											"source": 0
+										},
+										{
+											"begin": 426,
+											"end": 513,
+											"name": "JUMP",
+											"source": 0,
+											"value": "[out]"
+										}
+									]
+								}
+							}
+						},
+						"methodIdentifiers": {
+							"addToEVM()": "dadf8fee"
+						}
+					},
+					"metadata": "{\"compiler\":{\"version\":\"0.8.7+commit.e28d00a7\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"addToEVM\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"advanced_solidity1/assembly.sol\":\"LearnAssembly\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"advanced_solidity1/assembly.sol\":{\"keccak256\":\"0x916d859980a45251f053cf14ee8e275794769b12b5061914effb68ff6f58a814\",\"urls\":[\"bzz-raw://969dcc11d978eaa1decc54c3643c61db3b9ca2183863fac7b98245d73b138c45\",\"dweb:/ipfs/QmfCd1iNxLCdpxro5KbwqZjGKaZrnSv6t83jXH46SQ4u83\"]}},\"version\":1}",
+					"storageLayout": {
+						"storage": [],
+						"types": null
+					},
+					"userdoc": {
+						"kind": "user",
+						"methods": {},
+						"version": 1
+					}
+				}
+			}
+		},
+		"errors": [
+			{
+				"component": "general",
+				"errorCode": "1878",
+				"formattedMessage": "Warning: SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing \"SPDX-License-Identifier: <SPDX-License>\" to each source file. Use \"SPDX-License-Identifier: UNLICENSED\" for non-open-source code. Please see https://spdx.org for more information.\n--> advanced_solidity1/assembly.sol\n\n",
+				"message": "SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing \"SPDX-License-Identifier: <SPDX-License>\" to each source file. Use \"SPDX-License-Identifier: UNLICENSED\" for non-open-source code. Please see https://spdx.org for more information.",
+				"severity": "warning",
+				"sourceLocation": {
+					"end": -1,
+					"file": "advanced_solidity1/assembly.sol",
+					"start": -1
+				},
+				"type": "Warning"
+			},
+			{
+				"component": "general",
+				"errorCode": "2072",
+				"formattedMessage": "Warning: Unused local variable.\n  --> advanced_solidity1/assembly.sol:13:9:\n   |\n13 |         uint x;\n   |         ^^^^^^\n\n",
+				"message": "Unused local variable.",
+				"severity": "warning",
+				"sourceLocation": {
+					"end": 471,
+					"file": "advanced_solidity1/assembly.sol",
+					"start": 465
+				},
+				"type": "Warning"
+			},
+			{
+				"component": "general",
+				"errorCode": "2072",
+				"formattedMessage": "Warning: Unused local variable.\n  --> advanced_solidity1/assembly.sol:14:9:\n   |\n14 |         uint y;\n   |         ^^^^^^\n\n",
+				"message": "Unused local variable.",
+				"severity": "warning",
+				"sourceLocation": {
+					"end": 488,
+					"file": "advanced_solidity1/assembly.sol",
+					"start": 482
+				},
+				"type": "Warning"
+			},
+			{
+				"component": "general",
+				"errorCode": "2072",
+				"formattedMessage": "Warning: Unused local variable.\n  --> advanced_solidity1/assembly.sol:15:9:\n   |\n15 |         uint z;\n   |         ^^^^^^\n\n",
+				"message": "Unused local variable.",
+				"severity": "warning",
+				"sourceLocation": {
+					"end": 505,
+					"file": "advanced_solidity1/assembly.sol",
+					"start": 499
+				},
+				"type": "Warning"
+			},
+			{
+				"component": "general",
+				"errorCode": "2018",
+				"formattedMessage": "Warning: Function state mutability can be restricted to pure\n  --> advanced_solidity1/assembly.sol:12:5:\n   |\n12 |     function addToEVM() external{\n   |     ^ (Relevant source part starts here and spans across multiple lines).\n\n",
+				"message": "Function state mutability can be restricted to pure",
+				"severity": "warning",
+				"sourceLocation": {
+					"end": 513,
+					"file": "advanced_solidity1/assembly.sol",
+					"start": 426
+				},
+				"type": "Warning"
+			}
+		],
+		"sources": {
+			"advanced_solidity1/assembly.sol": {
+				"ast": {
+					"absolutePath": "advanced_solidity1/assembly.sol",
+					"exportedSymbols": {
+						"LearnAssembly": [
+							15
+						]
+					},
+					"id": 16,
+					"nodeType": "SourceUnit",
+					"nodes": [
+						{
+							"id": 1,
+							"literals": [
+								"solidity",
+								">=",
+								"0.7",
+								".0",
+								"<",
+								"0.9",
+								".0"
+							],
+							"nodeType": "PragmaDirective",
+							"src": "0:33:0"
+						},
+						{
+							"abstract": false,
+							"baseContracts": [],
+							"contractDependencies": [],
+							"contractKind": "contract",
+							"fullyImplemented": true,
+							"id": 15,
+							"linearizedBaseContracts": [
+								15
+							],
+							"name": "LearnAssembly",
+							"nameLocation": "405:13:0",
+							"nodeType": "ContractDefinition",
+							"nodes": [
+								{
+									"body": {
+										"id": 13,
+										"nodeType": "Block",
+										"src": "454:59:0",
+										"statements": [
+											{
+												"assignments": [
+													5
+												],
+												"declarations": [
+													{
+														"constant": false,
+														"id": 5,
+														"mutability": "mutable",
+														"name": "x",
+														"nameLocation": "470:1:0",
+														"nodeType": "VariableDeclaration",
+														"scope": 13,
+														"src": "465:6:0",
+														"stateVariable": false,
+														"storageLocation": "default",
+														"typeDescriptions": {
+															"typeIdentifier": "t_uint256",
+															"typeString": "uint256"
+														},
+														"typeName": {
+															"id": 4,
+															"name": "uint",
+															"nodeType": "ElementaryTypeName",
+															"src": "465:4:0",
+															"typeDescriptions": {
+																"typeIdentifier": "t_uint256",
+																"typeString": "uint256"
+															}
+														},
+														"visibility": "internal"
+													}
+												],
+												"id": 6,
+												"nodeType": "VariableDeclarationStatement",
+												"src": "465:6:0"
+											},
+											{
+												"assignments": [
+													8
+												],
+												"declarations": [
+													{
+														"constant": false,
+														"id": 8,
+														"mutability": "mutable",
+														"name": "y",
+														"nameLocation": "487:1:0",
+														"nodeType": "VariableDeclaration",
+														"scope": 13,
+														"src": "482:6:0",
+														"stateVariable": false,
+														"storageLocation": "default",
+														"typeDescriptions": {
+															"typeIdentifier": "t_uint256",
+															"typeString": "uint256"
+														},
+														"typeName": {
+															"id": 7,
+															"name": "uint",
+															"nodeType": "ElementaryTypeName",
+															"src": "482:4:0",
+															"typeDescriptions": {
+																"typeIdentifier": "t_uint256",
+																"typeString": "uint256"
+															}
+														},
+														"visibility": "internal"
+													}
+												],
+												"id": 9,
+												"nodeType": "VariableDeclarationStatement",
+												"src": "482:6:0"
+											},
+											{
+												"assignments": [
+													11
+												],
+												"declarations": [
+													{
+														"constant": false,
+														"id": 11,
+														"mutability": "mutable",
+														"name": "z",
+														"nameLocation": "504:1:0",
+														"nodeType": "VariableDeclaration",
+														"scope": 13,
+														"src": "499:6:0",
+														"stateVariable": false,
+														"storageLocation": "default",
+														"typeDescriptions": {
+															"typeIdentifier": "t_uint256",
+															"typeString": "uint256"
+														},
+														"typeName": {
+															"id": 10,
+															"name": "uint",
+															"nodeType": "ElementaryTypeName",
+															"src": "499:4:0",
+															"typeDescriptions": {
+																"typeIdentifier": "t_uint256",
+																"typeString": "uint256"
+															}
+														},
+														"visibility": "internal"
+													}
+												],
+												"id": 12,
+												"nodeType": "VariableDeclarationStatement",
+												"src": "499:6:0"
+											}
+										]
+									},
+									"functionSelector": "dadf8fee",
+									"id": 14,
+									"implemented": true,
+									"kind": "function",
+									"modifiers": [],
+									"name": "addToEVM",
+									"nameLocation": "435:8:0",
+									"nodeType": "FunctionDefinition",
+									"parameters": {
+										"id": 2,
+										"nodeType": "ParameterList",
+										"parameters": [],
+										"src": "443:2:0"
+									},
+									"returnParameters": {
+										"id": 3,
+										"nodeType": "ParameterList",
+										"parameters": [],
+										"src": "454:0:0"
+									},
+									"scope": 15,
+									"src": "426:87:0",
+									"stateMutability": "nonpayable",
+									"virtual": false,
+									"visibility": "external"
+								}
+							],
+							"scope": 16,
+							"src": "396:271:0",
+							"usedErrors": []
+						}
+					],
+					"src": "0:667:0"
+				},
+				"id": 0
+			}
+		}
+	}
+}
